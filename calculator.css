@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    width: 240px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 35rem;
+    margin-top: 100px;
+    background-color:#DADCE0;
+    border-radius: 5px;
+}
+
+section img{
+    width: 23px;
+    height: 30px;
+    display: flex;
+    justify-content: start;
+    margin-left: 5px;
+}
+
+
+section .display{
+    margin-top: 5px;
+    background-color: aliceblue;
+    width: 100%;
+    height: 58px;
+    border-radius: 2px;
+    border: 1px solid;
+}
+
+section .numbers{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    width: 85%;
+    height: 100%;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+    grid-template-areas: "ce ce clear multi"
+                         "btn1 btn2 btn3 plus"
+                         "btn4 btn5 btn6 minus"
+                         "btn7 btn8 btn9 dived"
+                         "btn0 btn0 dot equal"
+}
+
+button {
+    margin-left: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    opacity: 80%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    border-radius: 50%;
+    border: 1px solid;
+}
+
+section .numbers .clear {
+    transform: rotate(-35deg);
+}
+
+section .numbers .ce {
+    grid-area: ce;
+    width: 100px;
+    border-radius: 20px;
+}
+
+section .numbers .btn0 {
+    grid-area: btn0;
+    width: 100px;
+    border-radius: 20px;
+}
+
+input {
+    opacity: 50%;
+    width: 100%;
+    height: 100%;
+    border: 5px;
+    /* display: flex;
+    justify-content: end; */
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+   margin: 0;
+}
+
+
+
+  ::-webkit-input-placeholder {
+    display: flex;
+    flex-direction: end;
+    padding-left: 140px;
+    padding-top: 50px;
+  }
+
+
+

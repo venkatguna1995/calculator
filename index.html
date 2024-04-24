@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calculator.css">
+    <a href="https://www.flaticon.com/free-icons/calculator"></a>
+</head>
+<body style="background-color: lightblue;">
+    <script src="/app.js"></script>
+    <section>
+        <img src="../calculator/calculator.png">
+        <div class="display">
+            <input type="number" placeholder="Enter Number"  id="display"></input>
+        </div>
+        <div class="numbers">
+            <button type=" button" class="ce"  onclick="displayClear()">CE</button>
+            <button type=" button" class="clear" value="clear"  onclick="removeOneValue()">+</button>
+            <button type=" button" class="multi" value="*"  onclick="calculator(value)">*</button>
+            <button type=" button" class="btn1" value="1" onclick="calculator(value)">1</button>
+            <button type=" button" class="btn2" value="2"  onclick="calculator(value)">2</button>
+            <button type=" button" class="btn3" value="3"  onclick="calculator(value)">3</button>
+            <button type=" button" class="plus" value="+"  onclick="calculator(value)">+</button>
+            <button type=" button" class="btn4" value="4"  onclick="calculator(value)">4</button>
+            <button type=" button" class="btn5" value="5"  onclick="calculator(value)">5</button>
+            <button type=" button" class="btn6" value="6"  onclick="calculator(value)">6</button>
+            <button type=" button" class="minus" value="-"  onclick="calculator(value)">-</button>
+            <button type=" button" class="btn7" value="7"  onclick="calculator(value)">7</button>
+            <button type=" button" class="btn8" value="8"  onclick="calculator(value)">8</button>
+            <button type=" button" class="btn9" value="9"  onclick="calculator(value)">9</button>
+            <button type=" button" class="dived" value="/"  onclick="calculator(value)">/</button>
+            <button type=" button" class="btn0" value="0"  onclick="calculator(value)">0</button>
+            <button type=" button" class="dot" value="."  onclick="calculator(value)">.</button>
+            <button type=" button" class="equal" value="="  onclick=dispaly()>=</button>
+        </div>
+    </section>
+</body>
+</html>
